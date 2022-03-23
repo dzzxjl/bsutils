@@ -1,13 +1,11 @@
 package com.sparktest
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object DataFrameApp {
-	def main(args: Array[String]): Unit = {
 
-		val spark = SparkSession.builder().appName("DataFrameApp").master("local[2]").getOrCreate()
 
-		// 第一种：Spark中使用toDF函数创建DataFrame
+	def create_df(spark: SparkSession) : DataFrame= {
 		import spark.implicits._
 		val df = Seq(
 			(1, "First Value", java.sql.Date.valueOf("2010-01-01")),
@@ -15,6 +13,20 @@ object DataFrameApp {
 		).toDF("int_column", "string_column", "date_column")
 
 		df.show(100)
+		df
+
+	}
+
+
+
+	def main(args: Array[String]): Unit = {
+
+		val spark = SparkSession.builder().appName("DataFrameApp").master("local[2]").getOrCreate()
+
+		// 第一种：Spark中使用toDF函数创建DataFrame
+		val df = create_df(spark)
+		println(df.first())
+		df.head(1)
 
 
 		// 第二种：Spark中使用createDataFrame函数创建DataFrame
