@@ -15,6 +15,7 @@ object SparkV1 {
 		val sc = new SparkContext(conf)
 		//    val rdd = sc.parallelize(List(1,2,3,4,5,6)).map(_*3)
 		val rdd = sc.parallelize(List(1, 2, 3, 4, 5, 6))
+		val rdd = sc.parallelize(List(1, 2, 3, 4, 5, 6))
 
 
 		val filterRDD = rdd.filter(_ >= 3)
