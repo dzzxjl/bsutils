@@ -1,4 +1,4 @@
-package com.dzzxjl;
+package com.dzzxjl.spark;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;

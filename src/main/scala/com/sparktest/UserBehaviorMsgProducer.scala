@@ -1,8 +1,9 @@
-import scala.util.Random
+package com.sparktest
+
+import kafka.producer.{KeyedMessage, Producer, ProducerConfig}
+
 import java.util.Properties
-import kafka.producer.KeyedMessage
-import kafka.producer.ProducerConfig
-import kafka.producer.Producer
+import scala.util.Random
 
 class UserBehaviorMsgProducer(brokers: String, topic: String) extends Runnable {
 	private val brokerList = brokers
@@ -65,7 +66,7 @@ class UserBehaviorMsgProducer(brokers: String, topic: String) extends Runnable {
 object UserBehaviorMsgProducerClient {
 	def main(args: Array[String]) {
 		if (args.length < 2) {
-			println("Usage:UserBehaviorMsgProducerClient 192.168.1.1:9092 user-behavior-topic")
+			println("Usage:com.sparktest.UserBehaviorMsgProducerClient 192.168.1.1:9092 user-behavior-topic")
 			System.exit(1)
 		}
 		//start the message producer thread
