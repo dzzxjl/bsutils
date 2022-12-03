@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>FlinkDemo</module>
-        <module>myspark</module>
+        <module>flink</module>
+        <module>spark</module>
     </modules>
 
     <packaging>pom</packaging>
