@@ -74,6 +74,7 @@ public class PickUpRateDemo {
         // test
         // test1
         // test2
+        // test3
 
         ds.map(new MapFunction<Tuple4<Long, Integer, Integer, Integer>, Integer>() {
             @Override
