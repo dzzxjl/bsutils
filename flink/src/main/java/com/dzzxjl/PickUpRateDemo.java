@@ -71,6 +71,8 @@ public class PickUpRateDemo {
         //                     }
         //                 })
 
+        // test
+
         ds.map(new MapFunction<Tuple4<Long, Integer, Integer, Integer>, Integer>() {
             @Override
             public Integer map(Tuple4<Long, Integer, Integer, Integer> v) throws Exception {
