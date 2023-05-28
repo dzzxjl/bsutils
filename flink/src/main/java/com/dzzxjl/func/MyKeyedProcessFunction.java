@@ -1,4 +1,4 @@
-package com.dzzxjl;
+package com.dzzxjl.func;
 
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.configuration.Configuration;
@@ -10,7 +10,7 @@ public class MyKeyedProcessFunction extends KeyedProcessFunction {
     @Override
     public void open(Configuration parameters) throws Exception {
         super.open(parameters);
-        // ValueStatee
+        // ValueState
     }
 
     @Override
