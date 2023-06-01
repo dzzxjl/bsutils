@@ -1,3 +1,7 @@
-com\dzzxjl\FraudDetector.class
-com\dzzxjl\FraudDetectionJob.class
-com\dzzxjl\MyKeyedProcessFunction.class
+io/github/dzzxjl/func/MyKeyedProcessFunction.class
+io/github/dzzxjl/PickUpRateDemo$2.class
+io/github/dzzxjl/PickUpRateDemo$1.class
+io/github/dzzxjl/pojo/item.class
+io/github/dzzxjl/frauddetect/FraudDetectionJob.class
+io/github/dzzxjl/frauddetect/FraudDetector.class
+io/github/dzzxjl/PickUpRateDemo.class

@@ -1,4 +1,4 @@
-package com.dzzxjl.pojo;
+package io.github.dzzxjl.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

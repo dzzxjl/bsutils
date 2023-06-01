@@ -1,4 +1,4 @@
-package com.sparktest
+package io.github.dzzxjl.sparktest
 
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Duration, Seconds, StreamingContext}

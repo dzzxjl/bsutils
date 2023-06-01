@@ -1,4 +1,4 @@
-package com.sparktest
+package io.github.dzzxjl.sparktest
 
 import kafka.producer.{KeyedMessage, Producer, ProducerConfig}
 

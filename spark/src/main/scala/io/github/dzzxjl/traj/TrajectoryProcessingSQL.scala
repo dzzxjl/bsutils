@@ -1,4 +1,4 @@
-package com.traj
+package io.github.dzzxjl.traj
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{StringType, StructField, StructType}

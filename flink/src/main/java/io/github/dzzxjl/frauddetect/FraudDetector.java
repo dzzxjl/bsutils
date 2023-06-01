@@ -1,4 +1,4 @@
-package com.dzzxjl.frauddetect;
+package io.github.dzzxjl.frauddetect;
 
 
 import org.apache.flink.api.common.state.ValueState;

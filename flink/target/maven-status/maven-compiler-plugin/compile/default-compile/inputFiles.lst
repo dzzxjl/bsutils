@@ -1,3 +1,5 @@
-E:\project\bsutils\flink\src\main\java\com\dzzxjl\MyKeyedProcessFunction.java
-E:\project\bsutils\flink\src\main\java\com\dzzxjl\FraudDetector.java
-E:\project\bsutils\flink\src\main\java\com\dzzxjl\FraudDetectionJob.java
+/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/frauddetect/FraudDetector.java
+/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/func/MyKeyedProcessFunction.java
+/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/frauddetect/FraudDetectionJob.java
+/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/pojo/item.java
+/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/PickUpRateDemo.java

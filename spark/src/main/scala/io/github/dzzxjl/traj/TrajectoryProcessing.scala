@@ -1,4 +1,4 @@
-package com.traj
+package io.github.dzzxjl.traj
 
 import org.apache.spark.{SparkConf, SparkContext}
 
