@@ -1,5 +1,5 @@
-/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/frauddetect/FraudDetector.java
-/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/func/MyKeyedProcessFunction.java
-/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/frauddetect/FraudDetectionJob.java
-/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/pojo/item.java
-/Users/dzzxjl/IdeaProjects/bsutils/flink/src/main/java/io/github/dzzxjl/PickUpRateDemo.java
+/Users/dzzxjl/proj/bsutils/flink/src/main/java/io/github/dzzxjl/PickUpRateDemo.java
+/Users/dzzxjl/proj/bsutils/flink/src/main/java/io/github/dzzxjl/pojo/item.java
+/Users/dzzxjl/proj/bsutils/flink/src/main/java/io/github/dzzxjl/frauddetect/FraudDetectionJob.java
+/Users/dzzxjl/proj/bsutils/flink/src/main/java/io/github/dzzxjl/func/MyKeyedProcessFunction.java
+/Users/dzzxjl/proj/bsutils/flink/src/main/java/io/github/dzzxjl/frauddetect/FraudDetector.java
