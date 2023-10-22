@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink" />
-        <module name="spark" />
+        <module name="bsutils-flink" />
+        <module name="bsutils-spark" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,10 +1,6 @@
-## bsutils
-### flink demo
-- 1
-- 2
-- 3
+# bsutils
+## Flink core tips
+- CEP
 
-### spark demo
-- 1
-- 2
-- 3
+## Spark core tips
+- iceberg
