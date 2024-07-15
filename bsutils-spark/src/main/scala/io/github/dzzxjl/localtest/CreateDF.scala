@@ -2,7 +2,7 @@ package io.github.dzzxjl.localtest
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
-object DataFrameApp {
+object CreateDF extends AbstractApp {
 
 	def create_df(spark: SparkSession) : DataFrame= {
 		import spark.implicits._
@@ -17,14 +17,14 @@ object DataFrameApp {
 	}
 
 	def main(args: Array[String]): Unit = {
+		excute("DataFrameApp")
+	}
 
-		val spark = SparkSession.builder().appName("DataFrameApp").master("local[2]").getOrCreate()
-
+	override def run(spark: SparkSession): Unit = {
 		// 第一种：Spark中使用toDF函数创建DataFrame
 		val df = create_df(spark)
 		println(df.first())
 		df.head(1)
-
 
 		// 第二种：Spark中使用createDataFrame函数创建DataFrame
 		// val schema = StructType(List(
@@ -51,8 +51,5 @@ object DataFrameApp {
 		// //输出dataframe对应的Schema信息
 		// peopledataframe.printSchema()
 		// peopledataframe.select("name").show()
-
-		spark.stop()
-
 	}
 }

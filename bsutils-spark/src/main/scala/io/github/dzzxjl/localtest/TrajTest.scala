@@ -1,27 +1,25 @@
 package io.github.dzzxjl.localtest
 
-import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.sql.SparkSession
 
 import java.text.SimpleDateFormat
 import java.util.Locale
 import scala.collection.mutable.ArrayBuffer
 
-object SparkV1_2 {
+object TrajTest extends AbstractApp {
+
 	val formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
 
 	def main(args: Array[String]) {
+		excute("test")
+	}
 
-
-		//    1 初始化SparkContext
-		//setMaster("local") 本机的spark就用local，远端的就写ip
-		//如果是打成jar包运行则需要去掉 setMaster("local")因为在参数中会指定。
-		val conf = new SparkConf().setAppName("mySpark")
-		conf.setMaster("local")
-		val sc = new SparkContext(conf)
+	override def run(spark: SparkSession): Unit = {
+		val sc = spark.sparkContext
 		sc.setLogLevel("ERROR")
+
 		// 2 读取出租车轨迹数据
 		val path = "./src/main/resources/CU9510_06_01_trajectory.txt"
-
 
 		//    val path = "/Users/dzzxjl/Desktop/CU9510_06_01_trajectory.txt"
 		val trajRDD = sc.textFile(path)
@@ -35,7 +33,6 @@ object SparkV1_2 {
 		//    print(trajRDD.reduce((x, y) => x+y))
 		//    trajRDD.checkpoint()
 
-
 		def scalaMethod(a: String): String = {
 			return a + "hello world"
 		}
@@ -45,7 +42,6 @@ object SparkV1_2 {
 		//    trajRDD.take(100).foreach(println)
 
 		val list = new ArrayBuffer[String]()
-
 
 		//    val forEachRDD = trajRDD.foreach(println(x+"hll"))
 
@@ -109,7 +105,5 @@ object SparkV1_2 {
 		//    )
 		//    println(lAggregate)
 
-
 	}
-
 }
