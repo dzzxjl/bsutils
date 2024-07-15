@@ -1,4 +1,4 @@
-package io.github.dzzxjl.sparktest
+package io.github.dzzxjl.localtest
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.{SparkConf, SparkContext}

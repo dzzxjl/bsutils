@@ -1,9 +1,8 @@
-package io.github.dzzxjl.sparktest
+package io.github.dzzxjl.localtest
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object DataFrameApp {
-
 
 	def create_df(spark: SparkSession) : DataFrame= {
 		import spark.implicits._
@@ -16,8 +15,6 @@ object DataFrameApp {
 		df
 
 	}
-
-
 
 	def main(args: Array[String]): Unit = {
 
