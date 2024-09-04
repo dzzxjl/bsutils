@@ -16,10 +16,6 @@ object CreateDF extends AbstractApp {
 
 	}
 
-	def main(args: Array[String]): Unit = {
-		excute("DataFrameApp")
-	}
-
 	override def run(spark: SparkSession): Unit = {
 		// 第一种：Spark中使用toDF函数创建DataFrame
 		val df = create_df(spark)

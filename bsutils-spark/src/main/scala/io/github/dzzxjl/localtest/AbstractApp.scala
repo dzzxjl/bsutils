@@ -1,5 +1,6 @@
 package io.github.dzzxjl.localtest
 
+import io.github.dzzxjl.localtest.GroupByKeyTest.excute
 import org.apache.spark.sql.SparkSession
 
 abstract class AbstractApp {
@@ -11,6 +12,9 @@ abstract class AbstractApp {
       .appName(appName)
       .master("local[*]")
       .getOrCreate()
+
+    // spark.sparkContext.setLogLevel("WARN")
+    spark.sparkContext.setLogLevel("ERROR")
 
     spark
   }
@@ -27,5 +31,11 @@ abstract class AbstractApp {
     }
 
   }
+
+  def main(args: Array[String]): Unit = {
+    excute("Spark App")
+  }
+
+
 
 }

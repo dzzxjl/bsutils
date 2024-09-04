@@ -10,10 +10,6 @@ object TrajTest extends AbstractApp {
 
 	val formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
 
-	def main(args: Array[String]) {
-		excute("test")
-	}
-
 	override def run(spark: SparkSession): Unit = {
 		val sc = spark.sparkContext
 		sc.setLogLevel("ERROR")

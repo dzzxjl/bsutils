@@ -47,8 +47,4 @@ object GroupByKeyTest extends AbstractApp {
 
   }
 
-  def main(args: Array[String]): Unit = {
-    excute("attribution model test")
-  }
-
 }
