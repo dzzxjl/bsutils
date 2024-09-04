@@ -5,17 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.dzzxjl</groupId>
-    <artifactId>bsutils</artifactId>
+    <artifactId>mammut</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>BSUtils: </name>
-    <url>https://github.com/dzzxjl/bsutils</url>
+    <name>mammut: </name>
+    <url>https://github.com/dzzxjl/mammut</url>
     <description>Batch and Stream Utils</description>
 
     <modules>
-        <module>bsutils-flink</module>
-        <module>bsutils-spark</module>
+        <module>mammut-flink</module>
+        <module>mammut-spark</module>
+        <module>salonpas</module>
     </modules>
 
     <properties>

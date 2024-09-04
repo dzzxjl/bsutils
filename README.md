@@ -1,4 +1,4 @@
-# bsutils
+# mammut
 ## Flink core tips
 - CEP
 
